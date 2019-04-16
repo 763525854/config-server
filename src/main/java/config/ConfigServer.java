@@ -7,9 +7,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages="config")
-public class ConfigApplication {
+@SpringBootApplication(scanBasePackages = "config")
+public class ConfigServer {
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(ConfigApplication.class).web(true).run(args);
+		new SpringApplicationBuilder(ConfigServer.class).web(true).run(args);
 	}
 }
